@@ -17,6 +17,10 @@
                 @endif
             </div>
         </div>
+        <div>
+            <!--<p>{!! link_to_route('users.favorites', 'My Favorites List', ['id' => $user->id]) !!}</p>-->
+            <p>{!! link_to_route('users.favorites', 'My Favorites List', ['id' => $user->id],['class'=> 'btn btn-lg btn-primary']) !!}</p>
+        </div>        
     @else
         <div class="center jumbotron">
             <div class="text-center">
